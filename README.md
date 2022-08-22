@@ -1,15 +1,5 @@
 # DNSOverTLS
 
-### Install DOG
-
-```bash
-mkdir dog && cd dog
-VER=$(curl -s https://api.github.com/repos/ogham/dog/releases/latest|grep tag_name|cut -d '"' -f 4|sed 's/v//')
-wget https://github.com/ogham/dog/releases/download/v$VER/dog-v$VER-x86_64-unknown-linux-gnu.zip
-sudo apt install libssl
-unzip dog-*-x86_64-unknown-linux-gnu.zip
-sudo cp bin/dog /usr/bin/
-```
 
 # Install DNS Over TLS Linux
 ### Copy resolved.conf 
